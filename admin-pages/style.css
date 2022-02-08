@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*for hamburger menu to get 100% height*/
+    height: 60px;
+
+    background-color: purple;
+    color:white;
+
+    font-size: 25px;
+
+    box-shadow: 0px 2px 20px 0px grey;
+}
+
+header .hamburger-menu-open-button{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .hamburger-menu-open-button::after{
+    content:"";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: white;
+}
+
+header .hamburger-menu-open-button::before{
+    content:"";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: white;
+}
+
+header .hamburger-menu-open-button .middle{
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: white;
+    margin:10px 0px;
+}
+
+header a{
+    text-decoration: none;
+    color:unset;
+    flex-grow: 1;
+    text-align: center;
+}
+
+header a{
+    text-decoration: none;
+    color:unset;
+}
+
+.container{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 80%;
+    margin:20px auto 0px;
+}
+
+
+.item-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-list a{
+    text-decoration: none;
+    color:white;
+    background-color: purple;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px 2px rgb(173, 169, 169);
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.item-list a:hover p{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}

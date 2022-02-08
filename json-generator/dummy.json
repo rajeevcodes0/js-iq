@@ -1,0 +1,57 @@
+[
+	{
+		"questionStatement": "What is the difference between lexical scope and dynamic scope",
+		"url": "https:\/\/blog.bitsrc.io\/understanding-scope-and-scope-chain-in-javascript-f6637978cf53",
+		"code": null,
+		"topics": [
+			"scope",
+			"lexical scope",
+			"promises",
+			"functions",
+			"objects",
+			"storage",
+			"local storage",
+			"arrow functions",
+			"this keyword",
+			"new keyword",
+			"object oriented programming",
+			"array",
+			"AJAX",
+			"async await"
+		],
+		"urlTitle": "Understanding Scope and Scope Chain in JavaScript",
+		"hints": null
+	},
+	{
+		"questionStatement": "What is a scope in JavaScript?",
+		"url": "https:\/\/blog.bitsrc.io\/understanding-scope-and-scope-chain-in-javascript-f6637978cf53",
+		"code": null,
+		"topics": [
+			"scope"
+		],
+		"urlTitle": "Understanding Scope and Scope Chain in JavaScript",
+		"hints": null
+	},
+	{
+		"questionStatement": "Name three kinds of scopes in JS.",
+		"url": "https:\/\/blog.bitsrc.io\/understanding-scope-and-scope-chain-in-javascript-f6637978cf53",
+		"code": null,
+		"topics": [
+			"scope",
+			"lexical scope"
+		],
+		"urlTitle": "Understanding Scope and Scope Chain in JavaScript",
+		"hints": null
+	},
+	{
+		"questionStatement": "State true\/false: let and const are block scoped and var is not.",
+		"url": "https:\/\/blog.bitsrc.io\/understanding-scope-and-scope-chain-in-javascript-f6637978cf53",
+		"code": null,
+		"topics": [
+			"scope",
+			"random topic"
+		],
+		"urlTitle": "Understanding Scope and Scope Chain in JavaScript",
+		"hints": "true"
+	}
+]

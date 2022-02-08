@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../common-styles/hamburger-menu.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="side-drawer">
+            <div class="hamburger-menu-close-button-container">
+                <button class="hamburger-menu-close-button">X</button>
+            </div>
+            <ul class="list-of-links">
+                <a href="../index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">HOME</li>
+                </a>
+                <a href="../quiz-page/index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">QUIZ PAGE</li>
+                </a>
+                <a href="../search-by-topic/index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">QUESTIONS BY TOPIC</li>
+                </a>
+                <a href="../find-resources/index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">FIND RESOURCES</li>
+                </a>
+                <a href="../login/index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">ADMIN PANEL</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="hamburger-menu-open-button">
+            <span class="middle"></span>
+        </div>
+        <a href="../index.html">
+            <h1>JS-IQ🧠</h1>
+        </a>
+    </header>
+    <div class="container">
+        <h3><i class="fas fa-carrot"></i>Find Resources</h3>
+        <div class="input-box">
+            <div class="topic-input-label-container">
+                <label for="topic-input" class="topic-label label-bottom">Enter A Topic</label>
+                <input type="text"  id="topic-input" class="topic-input">
+            </div>
+            <button class="reset-button">Reset</button>
+        </div>
+        <ul class="suggested-topics"></ul>
+        <ul class="suggested-links"></ul>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>

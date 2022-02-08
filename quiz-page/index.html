@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../common-styles/hamburger-menu.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="side-drawer">
+            <div class="hamburger-menu-close-button-container">
+                <button class="hamburger-menu-close-button">X</button>
+            </div>
+            <ul class="list-of-links">
+                <a href="../index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">HOME</li>
+                </a>
+                <a href="../quiz-page/index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">QUIZ PAGE</li>
+                </a>
+                <a href="../search-by-topic/index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">QUESTIONS BY TOPIC</li>
+                </a>
+                <a href="../find-resources/index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">FIND RESOURCES</li>
+                </a>
+                <a href="../login/index.html" class="hamburger-link">
+                    <li class="hamburger-link-text">ADMIN PANEL</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="hamburger-menu-open-button">
+            <span class="middle"></span>
+        </div>
+        <a href="../index.html">
+            <h1>JS-IQ🧠</h1>
+        </a>
+    </header>
+    <h3 class="context-heading">Showing All The Questions In Random Order</h3>
+    <div class="container">
+        
+        <p class="remaining-questions-counter">Remaining:0</p>
+        <button class="get-random-button">Get Random</button>
+        <p class="question-statement">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore facere, cum totam corrupti consequatur!</p>
+        <!--pre tag is used to show preformated code-->
+        <div class="code-container">
+            <pre>
+                <code>function delayFuncExec() {
+                    console.log("I will be called after 100 milliseconds");
+                }
+            
+                var timerId = setTimeout(delayFuncExec, 100)
+            
+                console.log("Timer Id: " + timerId)
+                </code>
+            </pre>
+        </div>
+        <div class="show-details-container">
+            <div class="details-toggle-container">
+                <button class="toggle-button">></button>
+                <div class="horizontal-line"></div>
+            </div>
+            <div class="details">
+                <div class="url-container">
+                    <p>URL:</p>
+                    <a href="https://www.youtube.com" class="url-value" target="_blank">www.youtube.com</a>
+                    <button class="url-copy-button">📋</button>
+                </div>
+                <div class="topics-container">
+                    <p>Topics:</p>
+                    <ul class="topic-list">
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </div>
+                <div class="hints-container">
+                    <p>Hints:</p>
+                    <p class="hint-value">LOL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

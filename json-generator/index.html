@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-container">
+
+        <header>
+            <a href="../index.html">
+                <h1>JS-IQ🧠</h1>
+            </a>
+        </header>
+        <div class="container">
+            <div class="input-fields-container">
+                <div class="input-element">
+                    <label for="question-statement" class="question-statement-label">Question Statement<span class="lock-button">🔓</span></label>
+                    <input type="text" name="question-statement" class="question-statement-input input">
+                </div>
+                <div class="input-element">
+                    <label  autocomplete="off" for="url" class="url-label">URL<span class="lock-button">🔓</span></label>
+                    <input type="text" name="url" class="url-input input">
+                </div>
+                <div class="input-element">
+                    <label for="code" class="code-label">Code<span class="lock-button">🔓</span></label>
+                    <textarea row="1" type="text" name="code" class="code-input input"></textarea>
+                </div>
+                <div class="input-element">
+                    <label for="topics" class="topics-label">Topics(comma separated)<span class="lock-button">🔓</span></label>
+                    <ul class="selected-topics-list"></ul>
+                    <input type="text" name="topics" class="topics-input input">
+                    <p class="topic-suggestions"></p>
+                </div>
+                <div class="input-element">
+                    <label for="url-title" class="url-title-label" >URL Title<span class="lock-button">🔓</span></label>
+                    <input type="text" name="url-title" class="url-title-input input">
+                </div>
+                <div class="input-element">
+                    <label for="hints" class="hints-label">Hints<span class="lock-button">🔓</span></label>
+                    <input type="text" name="hints" class="hints-input input">
+                </div>
+                <div class="buttons-container">
+                    <button class="button generate-json-button"> <span class="button-icon-container">⛏</span> Generate JSON</button>
+                    <button class="button reset-button"><span class="button-icon-container">☢</span>Reset</button>
+                </div>
+            </div>
+
+            <div class="json-container">
+                <button class="button copy-button"><span class="button-icon-container">♯</span>Copy</button>
+                <textarea disabled rows=20 cols=40 class="json-value" ></textarea>
+                <button class="button add-to-file-button"><span class="button-icon-container">♯</span>Add To File</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

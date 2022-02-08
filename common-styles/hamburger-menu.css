@@ -1,0 +1,99 @@
+.overlay{
+    display: none;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(241, 241, 241,0.8);
+    z-index: 999;
+}
+
+.side-drawer{
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    position: relative;
+    animation-name: side-drawer-animation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding:10px;
+
+}
+
+@keyframes side-drawer-animation {
+    0%{
+        left:-100%;
+    }
+    100%{
+        left:0%;
+    }
+}
+
+.list-of-links{
+    width: 100%;
+    color:white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+    
+}
+
+.list-of-links li{
+    list-style: none;
+    margin:10px 0px;
+}
+
+.hamburger-link{
+    text-decoration: none;
+    color:white;
+    padding:10px;
+    width: 80%;
+    transition: all 0.6s;
+}
+
+.hamburger-link:hover{
+    background-color: white;
+    color:purple;
+    
+    border-radius: 5px;
+    transition: all 0.3s;
+    
+}
+
+.hamburger-link:hover li{
+    transform: translateX(10px);
+    transition: all 1s;
+}
+
+.hamburger-menu-close-button-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.hamburger-menu-close-button{
+    background-color: transparent;
+    color:white;
+    font-size: 30px;
+    border:none;
+    transition: all 0.3s;
+
+}
+
+.hamburger-menu-close-button:hover{
+    transform: scale(0.8);
+    transition: all 0.3s;
+}
+
+@media (max-width:450px) {
+    .side-drawer{
+        width: 90%;
+    }
+}
